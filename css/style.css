@@ -36,7 +36,7 @@ header{
     gap: 15rem;
 }
 span{
-    color: #C778dd;
+    color: #8edd78;
 }
 iframe{
     width: 20rem;
@@ -102,17 +102,17 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #C778dd;
+    border: 1px solid #8edd78;
     height: 3rem;
     width: 8rem;
 }
 .section-contact-me:hover{
-    background-color: #C778dd;
+    background-color: #8edd78;
     transition: 0.2s;
 }
 .section-1-img{
     width: 27rem;
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 .daily-phrase{
     display: flex;
