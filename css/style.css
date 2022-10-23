@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+
+}
+::-webkit-scrollbar{
+    width: .6rem;
+    background-color: #e0e0e0;        
+}
+::-webkit-scrollbar-thumb{
+    background-color: #3b3b3b;
+    border-radius: .3rem;
+}
+body{
+    background-color: #282c33;
+
+}
+
+/* Header Section */
+
+header{
+    width: 100%;
+    height: 5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15rem;
+}
+span{
+    color: #C778dd;
+}
+iframe{
+    width: 20rem;
+    height: 60rem;
+}
+.logo{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu{
+    display: flex;
+    gap: 3rem;
+}
+#menu a{
+    position: relative;
+}
+#menu a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+#menu a:hover::after{
+    width: 100%;
+}
+.menu-option{
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Section 1 */
+
+.section-1-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    
+}
+.section-1{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.section-1-tittle{
+    width: 30rem;
+    font-size: 2rem; 
+}
+.section-1-text{
+    width: 26.5rem;
+}
+.section-contact-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C778dd;
+    height: 3rem;
+    width: 8rem;
+}
+.section-contact-me:hover{
+    background-color: #C778dd;
+    transition: 0.2s;
+}
+.section-1-img{
+    width: 25rem;
+}
+
+
+
+
+
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 800px){
+
+    /* Header Section */
+    
+    .header{
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .logo{
+        margin-left: 1.5rem;
+    }
+
+    #menu{
+        display: block;
+        position: fixed;
+        width: 80%;
+        top: 4.3rem;
+        right: 0px;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        z-index: 1000 ; 
+    }
+    #nav.active #menu{
+        height: calc(60% - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        display: block;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        align-items: center;
+        font-size: 1.3rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer{
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+        color: #fff;
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+}
