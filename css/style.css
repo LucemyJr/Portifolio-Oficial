@@ -46,6 +46,9 @@ iframe{
     font-size: 1.3rem;
     cursor: pointer;
 }
+.logo i{
+    color: #8edd78;
+}
 #nav{
     display: flex;
     justify-content: space-around;
@@ -114,6 +117,9 @@ iframe{
     width: 27rem;
     margin: 3rem 0;
 }
+
+/* Phrease section */
+
 .daily-phrase{
     display: flex;
     justify-content: center;
@@ -131,6 +137,32 @@ iframe{
     font-size: 1.2rem;
 }
 
+/* Section 2 */
+
+
+.projects-content{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+.view-all{
+    font-size: 1rem;
+}
+.projects{
+    width: 20rem;
+}
+.projects-list{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+.website-img{
+    width: 20rem;
+    height: 12rem;
+}
 
 
 
