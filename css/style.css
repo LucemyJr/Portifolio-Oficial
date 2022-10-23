@@ -50,6 +50,7 @@ iframe{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #36384A;
 }
 #menu{
     display: flex;
@@ -123,10 +124,12 @@ iframe{
     justify-content: center;
     align-items: center;
     border: 1px solid #fff;
-    width: 37rem;
-    height: 5rem;
+    width: 31rem;
+    height: 4rem;
 }
-
+.phrase{
+    font-size: 1.2rem;
+}
 
 
 
@@ -164,6 +167,8 @@ iframe{
         height: calc(60% - 70px);
         visibility: visible;
         overflow-y: auto;
+        background-color: #36384A;
+
     }
     #menu a{
         display: block;
@@ -206,5 +211,32 @@ iframe{
     #nav.active #hamburguer::after{
         transform: rotate(-135deg);
         top: -0.4375rem;
+    }
+    /* Section 1 */
+
+    .section-1-content{
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 0;
+        
+    }
+    .section-1{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .section-1-text{
+        width: 29rem;
+    }
+    .section-1-img{
+        width: 22rem;
+        margin-top: 2rem;
+    }
+    .phrase-block{
+        width: 26rem;
+        height: 4.4rem;
+    }
+    .phrase{
+        font-size: 1rem;
     }
 }
