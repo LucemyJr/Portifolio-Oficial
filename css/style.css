@@ -20,7 +20,7 @@
     border-radius: .3rem;
 }
 body{
-    background-color: #282c33;
+    background-color: #36384A;
 
 }
 
@@ -110,9 +110,22 @@ iframe{
     transition: 0.2s;
 }
 .section-1-img{
-    width: 25rem;
+    width: 27rem;
+    margin-top: 3rem;
 }
-
+.daily-phrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phrase-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    width: 37rem;
+    height: 5rem;
+}
 
 
 
