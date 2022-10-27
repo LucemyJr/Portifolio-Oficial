@@ -1,0 +1,28 @@
+.projects-section-1{
+    display: flex;
+    justify-content: space-around;
+
+}
+.projects{
+    margin-bottom: 2rem;
+}
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+.small-projects{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.all-small-projects{
+    width: 20rem;
+    height: 10rem;
+    border: 2px solid #ABB2BF;
+}
+.website-name-small{
+    font-size: 1.2rem;
+    color: #fff;
+}
