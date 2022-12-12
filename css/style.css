@@ -216,13 +216,8 @@ iframe{
 
 .skills-content{
     display: flex;
-    justify-content: space-around;
-    margin: 3rem 0;
-}
-.work-around{
-    font-size: 1rem;
-    color: transparent;
-    user-select: none;
+    justify-content: flex-start;
+    margin: 3rem 0 3rem 17rem;
 }
 .skills-container{
     display: flex;
@@ -274,8 +269,8 @@ iframe{
 }
 .about-content{
     display: flex;
-    justify-content: space-around;
-    margin: 3rem 0;
+    justify-content: flex-start;
+    margin: 3rem 0 3rem 17rem;
 }
 .about-text-group{
     display: flex;
@@ -338,6 +333,9 @@ iframe{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.my-email:hover{
+    color: #8edd78;
 }
 .name i{
     color: #8edd78;
@@ -465,18 +463,146 @@ iframe{
         text-align: center;
         align-items: center;
     }
+    .section-1-tittle{
+        width: 20rem;
+    }
     .section-1-text{
-        width: 29rem;
+        width: 20rem;
     }
     .section-1-img{
-        width: 22rem;
+        width: 18rem;
         margin-top: 2rem;
     }
     .phrase-block{
-        width: 26rem;
+        width: 20rem;
         height: 4.4rem;
     }
     .phrase{
+        font-size: .85rem;
+    }
+
+    /* Section 2 */
+
+    .projects-content{
+        margin: 3rem 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .projects-tittle{
         font-size: 1rem;
     }
+    .view-all{
+        font-size: 1rem;
+    }
+    .projects-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects{
+        width: 18rem;
+    }
+    
+    /* Skills section */
+
+    .skills-content{
+        font-size: .8rem;
+        margin: 3rem 2rem;
+    }
+    .skills-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+    .skills-box{
+        width: 80%;
+        margin: auto 2rem;
+    }
+    .box{
+        width: 8rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-box-tittle{
+        font-size: 1rem;
+        width: 8rem;
+    }
+    .skills-box-elements{
+        font-size: .8rem;
+    }
+    .skills-container-img{
+        width: 12rem;
+    }
+
+    /* About section */
+            
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .about-content{
+        font-size: .7rem;
+        margin: 3rem 2rem;
+    }
+    .about-text-group{
+        text-align: justify;
+        margin: 0 2rem;
+        width: 20rem;
+        gap: 1rem;
+    }
+    .linkedin-btn{
+        margin: auto;
+    }
+
+    /* Contact section */
+
+    .contact-section{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .contact-text{
+        width: 20rem;
+        text-align: center;
+    }
+    .my-email:hover{
+        color: #8edd78;
+    }
+
+        /* Footer */
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .footer h1{
+        font-size: 1rem;
+    }
+    .footer-tittle{
+        margin-top: 2rem;
+        align-items: center;
+    }
+    .footer-media{
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+    .footer-media h1{
+        text-align: center;
+    }
+    .social-medias{
+        display: flex;
+        gap: 1rem;
+    }
+    .social-medias i:hover{
+        color: #8edd78;
+    }
+
+    .copyrigth{
+        text-align: center;
+        font-size: .8rem;
+        margin: 2rem 0;
+    }
+
 }
