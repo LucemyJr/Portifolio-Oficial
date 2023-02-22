@@ -286,6 +286,10 @@ iframe{
     flex-direction: column;
     gap: 1.5rem;
 }
+.about-btns{
+    display: flex;
+    gap: 2rem;
+}
 .linkedin-btn{
     display: flex;
     justify-content: center;
@@ -549,6 +553,9 @@ iframe{
         margin: 0 2rem;
         width: 20rem;
         gap: 1rem;
+    }
+    .about-btns{
+        
     }
     .linkedin-btn{
         margin: auto;
